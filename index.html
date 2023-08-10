@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ondeck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar side-padding layout-desktop hidden">
+      <div class="logo"><img src="Assets/Logo.svg" /></div>
+      <div class="nav-links">
+        <details class="products">
+          <div class="arrow"></div>
+          <summary>Products</summary>
+          <div class="dropdowns rounded-white">
+            <div class="dropdown">
+              <img src="Assets/Spense_Icon.svg" />
+              <div class="dropdown-content">
+                <h3 class="dropdown-heading">Spense</h3>
+                <p class="dropdown-text">
+                  Spense is a landing page for writers. Great for practicing
+                  absolute positioning and flex layouts
+                </p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <img src="Assets/Fiber_Icon.svg" />
+              <div class="dropdown-content">
+                <h3 class="dropdown-heading">Fiber Landing Page</h3>
+                <p class="dropdown-text">
+                  An online portfolio generator. Great to practice flex/grid
+                  layouts, and absolute positioning
+                </p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <img src="Assets/Gradie_Icon.svg" />
+              <div class="dropdown-content">
+                <h3 class="dropdown-heading">Gradie Sign Up Page</h3>
+                <p class="dropdown-text">
+                  Gradie is a simple sign up page, great to practice centering
+                  layouts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </details>
+        <a href="#">Challenges</a>
+        <a href="#">Resources</a>
+        <a href="#">Other Links</a>
+      </div>
+      <div class="registration">
+        <button class="sign-in">Sign in</button>
+        <button class="register">Try for free</button>
+      </div>
+    </nav>
+
+    <nav class="navbar side-padding layout-mobile">
+      <div class="logo">
+        <img src="Assets/Logo.svg" />
+      </div>
+      <button class="hamburger-menu-button">
+        <button class="hamburger-menu-close-button hidden">
+          <img src="Assets/Close.svg" />
+        </button>
+        <div class="rounded-white hamburger-menu hidden">
+          <div>
+            <h3>PRODUCTS</h3>
+            <div class="dropdowns-mobile">
+              <div class="dropdown">
+                <img src="Assets/Spense_Icon.svg" />
+                <div class="dropdown-content">
+                  <h3 class="dropdown-heading">Spense</h3>
+                  <p class="dropdown-text">
+                    Spense is a landing page for writers. Great for practicing
+                    absolute positioning and flex layouts
+                  </p>
+                </div>
+              </div>
+              <div class="dropdown">
+                <img src="Assets/Fiber_Icon.svg" />
+                <div class="dropdown-content">
+                  <h3 class="dropdown-heading">Fiber Landing Page</h3>
+                  <p class="dropdown-text">
+                    An online portfolio generator. Great to practice flex/grid
+                    layouts, and absolute positioning
+                  </p>
+                </div>
+              </div>
+              <div class="dropdown">
+                <img src="Assets/Gradie_Icon.svg" />
+                <div class="dropdown-content">
+                  <h3 class="dropdown-heading">Gradie Sign Up Page</h3>
+                  <p class="dropdown-text">
+                    Gradie is a simple sign up page, great to practice centering
+                    layouts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#">CHALLENGES</a>
+          <a href="#">RESOURCES</a>
+          <a href="#">OTHER LINKS</a>
+        </div>
+      </button>
+    </nav>
+    <main class="home side-padding">
+      <div class="home-content-container">
+        <div class="home-content">
+          <h1 class="heading">
+            Ondeck is your remote
+            <span class="heading yellow-heading"
+              ><br />conference calling tool</span
+            >
+          </h1>
+          <p class="supporting">
+            Ondeck is a service that allows you to create beautiful, online, and
+            encrypted video calls for you and your remote team.
+          </p>
+          <button class="register">Try for free</button>
+          <div class="reviews">
+            <p>5.0 Rating based on reviews from:</p>
+            <img src="Assets/Capterra Logo.svg" />
+            <img src="Assets/AlternativeTo Logo.svg" />
+          </div>
+        </div>
+      </div>
+      <img class="hero-image" src="Assets/Hero Image.png" />
+    </main>
+    <footer class="footer side-padding">
+      <span>Trusted by 3+ million people at companies like</span>
+      <div class="trusted-companies">
+        <img src="Assets/Netflix Logo.svg" />
+        <img src="Assets/Shopify Logo.svg" />
+        <img src="Assets/Spotify Logo.svg" />
+        <img src="Assets/Walmart Logo.svg" />
+      </div>
+    </footer>
+  </body>
+</html>

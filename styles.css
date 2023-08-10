@@ -1,0 +1,284 @@
+:root {
+  --color-beige: #f2ece4;
+  --color-beige-dark: #767675;
+  --color-yellow: #f7b300;
+  --color-green: #21361f;
+  --color-light-green: #54ac7d;
+  --color-grey-blue: #738391;
+  --color-dark-grey-blue: #0a263f;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --side-padding-amount: 120px;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+* {
+  font-family: "Inter", sans-serif !important;
+}
+
+body {
+  background-color: var(--color-beige);
+}
+
+.side-padding {
+  padding-left: var(--side-padding-amount) !important;
+  padding-right: var(--side-padding-amount) !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --side-padding-amount: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --side-padding-amount: 20px;
+  }
+}
+
+/* navbar */
+
+.layout-desktop,
+.layout-mobile {
+  padding: 50px 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-beige-dark);
+  font-size: medium;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-beige-dark);
+}
+
+.nav-links a:hover,
+.nav-links summary:hover,
+.sign-in:hover {
+  cursor: pointer;
+  transition: transform 0.1s;
+  transform: scale(1.05);
+}
+
+.nav-links details {
+  position: relative;
+}
+
+.rounded-white {
+  background-color: var(--color-white);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.dropdowns {
+  position: absolute;
+  bottom: -30px;
+  transform: translate(-40px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 450px;
+}
+
+.arrow {
+  transform: rotate(45deg) translate(40px, -2px);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: var(--color-white);
+}
+
+.dropdown {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.dropdown img {
+  transform: translateY(6px);
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--color-grey-blue);
+}
+
+.dropdown-heading {
+  color: var(--color-dark-grey-blue);
+  font-weight: 700;
+}
+
+.nav-links {
+  gap: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration {
+  display: flex;
+  gap: 15px;
+}
+
+.sign-in {
+  background-color: transparent;
+  border: 0;
+  font-size: medium;
+}
+
+.register {
+  padding: 15px 30px;
+  font-size: medium;
+  background-color: var(--color-green);
+  border: 0;
+  border-radius: 5px;
+  color: var(--color-white);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.register:hover {
+  background-color: var(--color-light-green);
+  transition: background-color 0.1s;
+}
+
+/* hero */
+
+.home {
+  padding: 50px 0px 100px 0px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.home-content-container {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+
+.home-content {
+}
+
+.heading {
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 760px) {
+  .heading {
+    font-size: 45px;
+  }
+}
+
+.supporting {
+  color: var(--color-beige-dark);
+  margin-bottom: 15px;
+}
+
+.yellow-heading {
+  color: var(--color-yellow);
+}
+
+.hero-image {
+  height: 400px;
+}
+
+.reviews {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* footer */
+
+.footer {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.footer span {
+  text-align: center;
+}
+
+.trusted-companies {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* hamburger */
+
+.hamburger-menu-button {
+  background-image: url("Assets/Menu.svg");
+  background-size: cover;
+  border: 0;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.hamburger-menu-close-button {
+  position: absolute;
+  right: calc(var(--side-padding-amount) + 15px);
+  top: 55px;
+  z-index: 20;
+  border: 0;
+  background-color: transparent;
+}
+
+.hamburger-menu {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  inset: var(--side-padding-amount);
+  top: 40px;
+  height: 280px;
+  overflow-y: scroll;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.hamburger-menu > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dropdowns-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hamburger-menu > * {
+  text-decoration: none;
+  color: var(--color-grey-blue);
+}
